@@ -8,6 +8,13 @@ import { Link } from 'react-router-dom';
 const User = ({user, loading, getUser, getUserRepos, repos, match}) => {
     useEffect(() =>{
         //param from:<Route exact path='/user/:login' (app.js)
+        /*
+        The library passes in a prop called match into every route
+        that is rendered. Inside this match object is another object
+        called params . This holds all matching params where the key
+        is the name we specified when creating the route and the value
+        is the actual value in the URL*/
+
         getUser(match.params.login);
         getUserRepos(match.params.login);
         //eslint-disable-lint-next-line
