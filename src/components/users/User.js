@@ -41,7 +41,7 @@ const User = ({user, loading, getUser, getUserRepos, repos, match}) => {
                     <i className="fas fa-times-circle text-danger" />
                 )}
                 <div className="card grid-2">
-                    <div clasName="all-center">
+                    <div className="all-center">
                         <img src={avatar_url} className='round-img'
                         alt="" style={{width: '150px'}}
                         />
